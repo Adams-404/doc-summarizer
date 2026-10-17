@@ -8,7 +8,7 @@
 Flatten the nested `doc-summarizer` project into the repository root and push the completed change.
 
 ## Status
-IN_PROGRESS
+DONE
 
 - Initialized `.agent-memory/` and cross-agent pointer files.
 - Moved `LICENSE`, `README.md`, `SKILL.md`, `references/`, and `scripts/` from
@@ -17,12 +17,14 @@ IN_PROGRESS
 - Verified the length checker and root file layout; `agentskills validate .`
   fails only because this checkout directory is `summarization_skill`, not the
   metadata-required `doc-summarizer`.
+- Committed the flattening change as `4c84dfe` (`Flatten skill project into repository root`).
 
 ## NEXT STEP (do this first)
-Stage the changes, review the staged diff, and commit the root-layout update.
+Push commit `4c84dfe` to `origin/main`, then verify the remote and clean worktree.
 
 ## Uncommitted / Half-Finished Work
-The flattening move, documentation updates, and project-memory bootstrap are uncommitted.
+The flattening change is committed in `4c84dfe`; this memory status update is
+the only expected follow-up commit before pushing.
 
 ## Recovery Plan (only if a risky op is running)
 <!-- Before any long/risky operation, write here what is about to happen and

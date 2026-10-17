@@ -7,6 +7,7 @@
 - YYYY-MM-DD HH:MM | agent: bootstrap | Created `.agent-memory/` from project-memory templates.
 - 2026-10-17 13:25 | agent: Copilot | Moved the skill package from `doc-summarizer/` to the repository root with `git mv`; updated `README.md` and `.agent-memory/PROJECT.md`.
 - 2026-10-17 13:27 | agent: Copilot | Ran `python3 scripts/check_length.py` and `git diff --check`; both passed. `agentskills validate .` was rejected because the checkout basename is `summarization_skill`, so documented validation from a correctly named install directory in `README.md`.
+- 2026-10-17 13:29 | agent: Copilot | Committed the flattened root layout as `4c84dfe` with `git commit`.
 
 <!--
 ### Example entries
