@@ -15,10 +15,10 @@ opinions that are not in the source, summarize when no document was given,
 claim to have read parts it could not read, or write a student's graded
 assignment.
 
-## Folder structure
+## Repository structure
 
 ```text
-doc-summarizer/
+summarization_skill/
 ├── SKILL.md                    # Required. Metadata (frontmatter) plus instructions.
 ├── README.md                   # This file. Human-facing overview.
 ├── LICENSE                     # MIT license (2026, Muhammad Adamu Aliyu).
@@ -40,8 +40,8 @@ location depends on the agent, but the folder must keep its name, because the
 `name` in the frontmatter must match the folder name.
 
 ```bash
-# Example: copy into a local skills directory
-cp -r doc-summarizer /path/to/your/skills/
+# Example: copy this repository into a local skills directory
+cp -r . /path/to/your/skills/doc-summarizer
 ```
 
 Common conventions are:
@@ -73,7 +73,8 @@ Validate the skill against the specification with the reference checker:
 
 ```bash
 pip install skills-ref
-agentskills validate ./doc-summarizer
+# Run this from a directory named doc-summarizer after installing the package.
+agentskills validate /path/to/skills/doc-summarizer
 ```
 
 Note: the PyPI package is named `skills-ref`, but in version 0.1.1 the
@@ -82,7 +83,10 @@ if your path differs. The checker verifies that `SKILL.md` has valid frontmatter
 and follows the naming and description conventions. Expected output is
 `Valid skill: doc-summarizer`.
 
-If you cannot install `skills-ref`, check the rules by hand:
+The validator requires the containing directory to be named `doc-summarizer`;
+this checkout is named `summarization_skill`, so validate the copied install
+directory rather than this repository root. If you cannot install `skills-ref`,
+check the rules by hand:
 
 - Folder name is lowercase letters, numbers, and hyphens only, 1-64
   characters, no leading or trailing hyphen, no double hyphen.
