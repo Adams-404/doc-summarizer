@@ -6,7 +6,7 @@
 
 ## Priority 1 — blocking / current
 
-- [ ] Commit and push the Skills CLI installation documentation to `origin/main`.
+- [ ] Verify the pushed Skills CLI installation documentation.
 
 ## Priority 2 — important
 
@@ -24,3 +24,4 @@
 
 - [x] 2026-10-17 — Move the project contents from `doc-summarizer/` to the repository root.
 - [x] 2026-10-17 — Commit the root-layout change as `4c84dfe`.
+- [x] 2026-10-17 — Add and push Skills CLI installation documentation as `9ba6554`.

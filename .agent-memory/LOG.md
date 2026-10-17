@@ -9,6 +9,7 @@
 - 2026-10-17 13:27 | agent: Copilot | Ran `python3 scripts/check_length.py` and `git diff --check`; both passed. `agentskills validate .` was rejected because the checkout basename is `summarization_skill`, so documented validation from a correctly named install directory in `README.md`.
 - 2026-10-17 13:29 | agent: Copilot | Committed the flattened root layout as `4c84dfe` with `git commit`.
 - 2026-10-17 13:41 | agent: Copilot | Added `npx skills add Adams-404/doc-summarizer` and global-install instructions to `README.md`; preserved pre-existing untracked `.agents/` and `skills-lock.json`.
+- 2026-10-17 13:42 | agent: Copilot | Committed and pushed the installation documentation as `9ba6554`.
 
 <!--
 ### Example entries

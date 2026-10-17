@@ -8,7 +8,7 @@
 Document Skills CLI installation for the root-level `doc-summarizer` skill and push the change.
 
 ## Status
-IN_PROGRESS
+DONE
 
 - Initialized `.agent-memory/` and cross-agent pointer files.
 - Moved `LICENSE`, `README.md`, `SKILL.md`, `references/`, and `scripts/` from
@@ -21,13 +21,15 @@ IN_PROGRESS
 - Found the repository is `Adams-404/doc-summarizer`; untracked `.agents/` and
   `skills-lock.json` belong to an existing local installation and are being
   preserved.
+- Added Skills CLI installation commands to `README.md` and pushed commit
+  `9ba6554` to `origin/main`.
 
 ## NEXT STEP (do this first)
-Run `git diff --check`, verify the README install commands, commit only `README.md` and memory files, then push.
+Verify `origin/main` points to `9ba6554` and confirm the worktree contains only the preserved untracked installation files.
 
 ## Uncommitted / Half-Finished Work
-The README and memory updates are uncommitted. Existing untracked `.agents/` and
-`skills-lock.json` must not be staged.
+The README and memory changes are committed and pushed. Existing untracked
+`.agents/` and `skills-lock.json` remain intentionally unstaged.
 
 ## Recovery Plan (only if a risky op is running)
 <!-- Before any long/risky operation, write here what is about to happen and
@@ -38,4 +40,4 @@ The optional `agentskills` validator requires a containing directory named
 `doc-summarizer`; validation must run from the copied install directory.
 
 ## Last Updated
-2026-10-17 13:25 by Copilot
+2026-10-17 13:42 by Copilot
