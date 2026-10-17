@@ -8,6 +8,7 @@
 - 2026-10-17 13:25 | agent: Copilot | Moved the skill package from `doc-summarizer/` to the repository root with `git mv`; updated `README.md` and `.agent-memory/PROJECT.md`.
 - 2026-10-17 13:27 | agent: Copilot | Ran `python3 scripts/check_length.py` and `git diff --check`; both passed. `agentskills validate .` was rejected because the checkout basename is `summarization_skill`, so documented validation from a correctly named install directory in `README.md`.
 - 2026-10-17 13:29 | agent: Copilot | Committed the flattened root layout as `4c84dfe` with `git commit`.
+- 2026-10-17 13:41 | agent: Copilot | Added `npx skills add Adams-404/doc-summarizer` and global-install instructions to `README.md`; preserved pre-existing untracked `.agents/` and `skills-lock.json`.
 
 <!--
 ### Example entries

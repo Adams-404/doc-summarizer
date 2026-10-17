@@ -6,7 +6,7 @@
 
 ## Priority 1 — blocking / current
 
-- [ ] Push the validated root package to `origin/main`.
+- [ ] Commit and push the Skills CLI installation documentation to `origin/main`.
 
 ## Priority 2 — important
 

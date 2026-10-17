@@ -35,19 +35,25 @@ summarization_skill/
 
 ## Install
 
-Copy the `doc-summarizer` folder into your agent's skills directory. The exact
-location depends on the agent, but the folder must keep its name, because the
-`name` in the frontmatter must match the folder name.
+Install the skill with the Skills CLI:
 
 ```bash
-# Example: copy this repository into a local skills directory
-cp -r . /path/to/your/skills/doc-summarizer
+npx skills add Adams-404/doc-summarizer
 ```
 
-Common conventions are:
+To install it globally for your agents, use:
 
-- A project-level `skills/` directory next to your other agent files.
-- A user-level skills directory, if your agent supports one.
+```bash
+npx skills add Adams-404/doc-summarizer -g
+```
+
+The CLI discovers the root `SKILL.md` and installs the `doc-summarizer` skill
+using the name declared in its frontmatter. To install manually, copy this
+repository into your agent's skills directory:
+
+```bash
+cp -r . /path/to/your/skills/doc-summarizer
+```
 
 The skill is fully portable: the whole `doc-summarizer` folder is the unit you
 move or share.

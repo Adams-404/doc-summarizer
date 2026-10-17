@@ -5,10 +5,10 @@
 > Update this file after every meaningful step. Never in batches. Never "at the end".
 
 ## Current Task
-Flatten the nested `doc-summarizer` project into the repository root and push the completed change.
+Document Skills CLI installation for the root-level `doc-summarizer` skill and push the change.
 
 ## Status
-DONE
+IN_PROGRESS
 
 - Initialized `.agent-memory/` and cross-agent pointer files.
 - Moved `LICENSE`, `README.md`, `SKILL.md`, `references/`, and `scripts/` from
@@ -18,13 +18,16 @@ DONE
   fails only because this checkout directory is `summarization_skill`, not the
   metadata-required `doc-summarizer`.
 - Committed the flattening change as `4c84dfe` (`Flatten skill project into repository root`).
+- Found the repository is `Adams-404/doc-summarizer`; untracked `.agents/` and
+  `skills-lock.json` belong to an existing local installation and are being
+  preserved.
 
 ## NEXT STEP (do this first)
-Push commit `4c84dfe` to `origin/main`, then verify the remote and clean worktree.
+Run `git diff --check`, verify the README install commands, commit only `README.md` and memory files, then push.
 
 ## Uncommitted / Half-Finished Work
-The flattening change is committed in `4c84dfe`; this memory status update is
-the only expected follow-up commit before pushing.
+The README and memory updates are uncommitted. Existing untracked `.agents/` and
+`skills-lock.json` must not be staged.
 
 ## Recovery Plan (only if a risky op is running)
 <!-- Before any long/risky operation, write here what is about to happen and
